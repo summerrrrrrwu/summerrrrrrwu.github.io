@@ -1,0 +1,249 @@
+<html>
+<head>
+<style>
+* {
+	box-sizing: border-box;
+}
+
+body {
+  padding: 10px;
+  background: #baa88c;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 20px;
+  text-align: center;
+  background: white;
+  	border-radius: 10px;
+}
+
+.header h1 {
+  font-size: 80px;
+}
+
+
+/* Style the top navigation bar */
+#top_menu {
+  list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #453508;
+		border-radius: 10px;
+}
+
+/* Style the topnav links */
+#top_menu a {
+  float: left;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+	border-radius: 10px;
+}
+
+/* Change color on hover */
+#top_menu a:hover {
+	background-color: #897550;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 50%;
+  	border-radius: 10px;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 50%;
+  background-color: #baa88c;
+  padding-left: 20px;
+  	border-radius: 10px;
+}
+
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  	border-radius: 10px;
+}
+.card1 {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  	border-radius: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+#div_relative_5 {
+  border:transparent;
+  width: 1px;
+  height: 1px;
+  position: relative;
+  left: 600px;
+  top: 500px;
+  moz-transform: rotate(17deg);
+webkit-transform: rotate(17deg);
+o-transform: rotate(17deg);
+ms-transform: rotate(17deg);
+transform: rotate(17deg);
+}
+
+#div_relative_6 {
+  border:transparent;
+  width: 1px;
+  height: 1px;
+  position: relative;
+  left: 750px;
+  top: 650px;
+  moz-transform: rotate(158deg);
+webkit-transform: rotate(158deg);
+o-transform: rotate(158deg);
+ms-transform: rotate(158deg);
+transform: rotate(158deg);
+}
+#div_relative_7 {
+  border:transparent;
+  width: 1px;
+  height: 1px;
+  position: relative;
+  left: 540px;
+  top:10px;
+
+}
+
+.monospace_2 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+}
+.monospace_3 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>- Cappuccino -</h1>
+</div>
+
+<div id = "top_menu">
+  <a href="index.html">HOME</a>
+</div>
+
+<div id="div_relative_5">
+  <img
+			src="images/c1.jpg"
+			alt="Americano"
+			title="Americano"
+			align="top"
+			height ="60"
+	>
+</div>
+<div id="div_relative_6">
+  <img
+			src="images/c2.jpg"
+			alt="Americano"
+			title="Americano"
+			align="top"
+			height ="50"
+	>
+</div>
+<div id="div_relative_7">
+  <img
+			src="images/c3.jpg"
+			alt="Americano"
+			title="Americano"
+			align="top"
+			height ="120"
+	>
+</div>
+
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card1">
+      <h1>How to make an - Cappuccino -</h1>
+	  <img
+			src="images/c4.jpg"
+			style="display:block; margin:auto;border-radius: 10px;"
+			alt="how to make Americano"
+			title="how to make Americano"
+			align="top"
+			height ="300"
+			>
+      <p class="monospace_2">One shot of Espresso plus steamed milk Topped with foam and cinnamon sprinkles.</p>
+    </div>
+    <div class="card">
+      <h1>Best Outfit</h1>
+      <img
+			src="images/c5.png"
+			style="display:block; margin:auto;border-radius: 10px;"
+			alt="Americano"
+			title="Americano"
+			align="top"
+			height ="500">
+      <p class="monospace_2">A set of sportwear ---><br>Comfort is all you value.</p>
+	 </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+	  
+      <h1>Describe Those who love Cappuccino</h1>
+	  <img
+			src="images/c6.jpg"
+			alt="Americano"
+			title="Americano"
+			align="top"
+			height ="50">
+      <p class="monospace_2">You might be a</p>
+	  <p class="monospace_3">Creative / Social / knowledgable</p>
+	  <p class="monospace_2">person</p>
+    </div>
+    <div class="card">
+      <h1>The best go-with dessert</h1>
+      <img
+			src="images/c7.png"
+			style="display:block; margin:auto;border-radius: 10px;"
+			alt="Americano"
+			title="Americano"
+			align="top"
+			height ="400">
+			<p class="monospace_2">The bittersweet of cappucchino goes well with the sourness of lemon.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

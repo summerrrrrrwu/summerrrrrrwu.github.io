@@ -1,48 +1,252 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>網頁導覽列</title>
-    <!-- 引入 Bootstrap CSS 檔案 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+
+
+.default_bg_imgage {
+	background-image: url("images/i2.jpg");
+	background-size: cover;
+}
+
+p {
+text-align: center;
+color: transparent;
+font-size: 2em;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background: #f4f3f1;
+  	border-radius: 10px;
+}
+#top_menu {
+	position: sticky;
+	top: 8px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #453508;
+	border-radius: 10px;
+}
+
+#top_menu a {
+	float: center;
+}
+
+#top_menu a {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-style: italic;
+}
+
+#top_menu a:hover {
+	background-color: #897550;
+}
+
+#div_relative_1 {
+  border:transparent;
+  width: 180px;
+  height: 80px;
+  position: relative;
+  left: 150px;
+  top: 250px;
+  font-size: 30px;
+  font-style: italic;
+}
+
+#div_relative_1 a {
+	color: white;
+	background-color: #897550;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	border-radius: 10px;
+}
+
+#div_relative_1 a:hover {
+	color:#453508;
+}
+
+#div_relative_2 {
+  border:transparent;
+  width: 500px;
+  height: 100px;
+  position: relative;
+  left: 540px;
+  top: 130px;
+  font-size:40px;
+  font-style: italic;
+}
+
+#div_relative_2 a {
+	color: #272727;
+	background-color: #c4b7a4;
+	border-radius: 10% 30% 50% 70%;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	border-radius: 10px;
+}
+
+#div_relative_2 a:hover {
+	color:#897550;
+}
+#div_relative_3 {
+  border:transparent;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 960px;
+  top: 70px;
+  font-size:70px;
+  font-style: italic;
+}
+
+#div_relative_3 a {
+	color: white;
+	background-color: #2a1f04;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	border-radius: 10px;
+}
+
+#div_relative_3 a:hover {
+	color:#453508;
+}
+#div_relative_4 {
+  border:transparent;
+  background-color: #8a785c;
+  width: 130px;
+  height: 100px;
+  position: relative;
+  left: 470px;
+  top: 400px;
+  font-size:90px;
+  font-style: italic;
+}
+
+#div_relative_4 a {
+	color: white;
+	background-color: #8a785c;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	border-radius: 10px;
+}
+
+#div_relative_4 a:hover {
+	color:#453508;
+}
+#div_relative_5 {
+  border:transparent;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 1100px;
+  top: 450px;
+  font-size:30px;
+  font-style: italic;
+}
+
+#div_relative_5 a {
+	color: #1e1c18;
+	background-color: #baa88c;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	border-radius: 10px;
+}
+
+#div_relative_5 a:hover {
+	color:white;
+}
+#div_relative_6 {
+  border:transparent;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 980px;
+  top: 850px;
+  font-size:150px;
+  font-style: italic;
+}
+
+#div_relative_6 a {
+	color: white;
+	background-color: #c4b295;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	border-radius: 10px;
+}
+
+#div_relative_6 a:hover {
+	color:#453508;
+}
+
+</style>
 </head>
+<body class="default_bg_imgage">
+<div class="header">
+<img
+			src="images/i1.jpg"
+			alt="Types of coffee"
+			title="Types of coffee"
+			align="top"
+			height ="200">
+</div>
+<div id = "top_menu">
+  <a href="index.html">HOME</a>
+</div>
 
-<body>
-
-    <!-- 導覽列開始 -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!-- 将导航栏改为黑色 -->
-        <a class="navbar-brand" href="#">網站名稱</a>
-        <!-- 切換按鈕（小螢幕時顯示）-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- 導覽列連結 -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">個人資料</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">我的作品</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">我的筆記</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">我的翻唱</a> <!-- 新增“我的翻唱”链接 -->
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!-- 導覽列結束 -->
-
-    <!-- 引入 Bootstrap JS 檔案（可選） -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<div id="div_relative_1">
+  <a href="Espresso.html">Espresso</a>
+</div>
+<div id="div_relative_2">
+  <a href="flatwhite.html">Flat White</a>
+</div>
+<div id="div_relative_3">
+  <a href="americano.html">Americano</a>
+</div>
+<div id="div_relative_4">
+  <a href="Macchiato.html">Macchiato</a>
+</div>
+<div id="div_relative_5">
+  <a href="cappuchino.html">Cappuccino</a>
+</div>
+<div id="div_relative_6">
+  <a href="latte.html">Latte</a>
+</div>
+<p>------</p>
+<p>------</p>
+<p>------</p>
+<p>------</p>
+<p>------</p>
+<p>------</p>
+<p>------</p>
+<p>------</p>
+<p>------</p>
+<p>------</p>
+<p>------</p>
+<p>------</p>
+<p>------</p>
+<p>------</p>
+<p>------</p>
+<p>------</p>
+<p>------</p>
+<p>------</p>
+<p>------</p>
+<p>------</p>
+<p>------</p>
+<p>------</p>
+<p>------</p>
+<p>------</p>
 </body>
-
 </html>
+

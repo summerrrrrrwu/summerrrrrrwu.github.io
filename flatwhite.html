@@ -1,0 +1,235 @@
+<html>
+<head>
+<style>
+* {
+	box-sizing: border-box;
+}
+
+body {
+  padding: 10px;
+  background: #c4b7a4;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 20px;
+  text-align: center;
+  background: white;
+  	border-radius: 10px;
+}
+
+.header h1 {
+  font-size: 80px;
+}
+
+
+/* Style the top navigation bar */
+#top_menu {
+  list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #453508;
+		border-radius: 10px;
+}
+
+/* Style the topnav links */
+#top_menu a {
+  float: left;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+	border-radius: 10px;
+}
+
+/* Change color on hover */
+#top_menu a:hover {
+	background-color: #897550;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 50%;
+  	border-radius: 10px;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 50%;
+  background-color: #c4b7a4;
+  padding-left: 20px;
+  	border-radius: 10px;
+}
+
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  	border-radius: 10px;
+}
+.card1 {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  	border-radius: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+#div_relative_5 {
+  border:transparent;
+  width: 1px;
+  height: 1px;
+  position: relative;
+  left: 550px;
+  top: 500px;
+ 
+}
+#div_relative_6 {
+  border:transparent;
+  width: 1px;
+  height: 1px;
+  position: relative;
+  left: 650px;
+  top: 650px;
+}
+#div_relative_7 {
+  border:transparent;
+  width: 1px;
+  height: 1px;
+  position: relative;
+  left: 550px;
+  top: 330px;
+}
+.monospace_2 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+}
+.monospace_3 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>- Flat White -</h1>
+</div>
+
+<div id = "top_menu">
+  <a href="index.html">HOME</a>
+</div>
+<div id="div_relative_7">
+  <img
+			src="images/f1.jpg"
+			alt="Americano"
+			title="Americano"
+			align="top"
+			height ="100"
+	>
+</div>
+<div id="div_relative_5">
+  <img
+			src="images/f2.jpg"
+			alt="Americano"
+			title="Americano"
+			align="top"
+			height ="120"
+	>
+</div>
+<div id="div_relative_6">
+  <img
+			src="images/f3.jpg"
+			alt="Americano"
+			title="Americano"
+			align="top"
+			height ="100"
+	>
+</div>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card1">
+      <h1>How to make an - Flat White -</h1>
+	  <img
+			src="images/f4.jpg"
+			style="display:block; margin:auto;border-radius: 10px;"
+			alt="how to make Americano"
+			title="how to make Americano"
+			align="top"
+			height ="300"
+			>
+      <p class="monospace_2">One shot of espresso, some milk.</p>
+    </div>
+    <div class="card">
+      <h1>Best Outfit</h1>
+      <img
+			src="images/f5.jpg"
+			style="display:block; margin:auto;border-radius: 10px;"
+			alt="Americano"
+			title="Americano"
+			align="top"
+			height ="500">
+      <p class="monospace_2">A floral dress ---><br>gives you a country and laid back vibe.</p>
+	 </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+	  
+      <h1>Describe Those who love Flat White</h1>
+	  <img
+			src="images/f6.jpg"
+			alt="Americano"
+			title="Americano"
+			align="top"
+			height ="50">
+      <p class="monospace_2">You might be a</p>
+	  <p class="monospace_3">Retro / Nostalgic / Rural</p>
+	  <p class="monospace_2">person</p>
+    </div>
+    <div class="card">
+      <h1>The best go-with dessert</h1>
+      <img
+			src="images/f7.jpg"
+			style="display:block; margin:auto;border-radius: 10px;"
+			alt="Americano"
+			title="Americano"
+			align="top"
+			height ="400">
+			<p class="monospace_2">Lemon butter swiss rolls</p>
+			<p class="monospace_2" style="text-shadow: 0 0 8px #c4b295">sweet and sour at the same time</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
